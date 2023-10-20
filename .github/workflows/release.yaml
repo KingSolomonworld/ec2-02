@@ -15,7 +15,7 @@ jobs:
         with:
           sparse-checkout: true
       - name: release
-      git   run: npm install --save-dev semantic-release
+      #run: npm install --save-dev semantic-release
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
